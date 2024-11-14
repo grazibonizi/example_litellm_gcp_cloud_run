@@ -9,6 +9,6 @@ WORKDIR /app
 COPY litellm_config.yaml .
 
 # Expose the necessary port
-EXPOSE 8080/tcp
+EXPOSE 4000/tcp
 
-CMD ["--port", "8080", "--config", "litellm_config.yaml"]
+CMD ["--port", "4000", "--config", "litellm_config.yaml"]
